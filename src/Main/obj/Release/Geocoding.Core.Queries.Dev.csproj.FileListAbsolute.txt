@@ -1,0 +1,1 @@
+C:\DevSource\Tamu\GeoInnovation\Geocoding.Core.Queries\src\Main\obj\Release\Geocoding.Core.Queries.Dev.csprojResolveAssemblyReference.cache
