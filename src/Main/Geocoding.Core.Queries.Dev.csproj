@@ -162,18 +162,62 @@
     <ProjectReference Include="..\..\..\Common.Core.Addresses\Src\Main\Common.Core.Addresses.Dev.csproj">
       <Project>{29C0949B-4D41-4138-B59B-6DE4A6A1774E}</Project>
       <Name>Common.Core.Addresses.Dev</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Core.Configurations\Src\Main\Common.Core.Configurations.Dev.csproj">
       <Project>{CA57DD09-BCF7-439A-A6FB-6FCBE125FB71}</Project>
       <Name>Common.Core.Configurations.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.ExceptionHandling\Src\Main\Common.Core.ExceptionHandling.Dev.csproj">
+      <Project>{4A553AE2-F5D1-42B6-BE3A-8442DF626EAF}</Project>
+      <Name>Common.Core.ExceptionHandling.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.Units\Src\Main\Common.Core.Geo.Units.Dev.csproj">
+      <Project>{5F42520E-2DDA-4B4A-AFE5-5F5E00E33D47}</Project>
+      <Name>Common.Core.Geo.Units.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Utils\Src\Main\Common.Core.Utils.Dev.csproj">
+      <Project>{0744A732-A7FE-4658-967D-C5A583EF08E4}</Project>
+      <Name>Common.Core.Utils.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Data.Databases.Runners\Src\Main\Common.Data.Databases.Runners.Dev.csproj">
+      <Project>{5A003DA0-31D1-48F6-81F7-0A0301362AC9}</Project>
+      <Name>Common.Data.Databases.Runners.Dev</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Data.Databases\Src\Main\Common.Data.Databases.Dev.csproj">
       <Project>{A7DF15F2-1210-4431-B223-A3A2810DC14A}</Project>
       <Name>Common.Data.Databases.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Geocoding.Core.Algorithms.FeatureMatching.SelectionMethods\src\Main\Geocoding.Core.Algorithms.FeatureMatching.SelectionMethods.Dev.csproj">
+      <Project>{58A97F94-A955-473B-9FF7-80892B17B0B5}</Project>
+      <Name>Geocoding.Core.Algorithms.FeatureMatching.SelectionMethods.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Geocoding.Core.Algorithms.FeatureMatchScorers.AttributeWeightingSchemes\src\Main\Geocoding.Core.Algorithms.FeatureMatchScorers.AttributeWeightingSchemes.Dev.csproj">
+      <Project>{F2ADB16B-A16C-4B1D-BBDE-6E09BC2EB82C}</Project>
+      <Name>Geocoding.Core.Algorithms.FeatureMatchScorers.AttributeWeightingSchemes.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Geocoding.Core.Metadata.OutputFieldGroups\src\Main\Geocoding.Core.Metadata.OutputFieldGroups.Dev.csproj">
+      <Project>{8D866D23-34C3-4277-9480-42EF1248F54F}</Project>
+      <Name>Geocoding.Core.Metadata.OutputFieldGroups.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Geocoding.ExternalGeocoders.Types\src\Main\Geocoding.ExternalGeocoders.Types.Dev.csproj">
+      <Project>{FD507769-6EF8-4921-855C-6FD8530F587D}</Project>
+      <Name>Geocoding.ExternalGeocoders.Types.Dev</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\PointIntersectors.Census\src\Main\PointIntersectors.Census.Dev.csproj">
       <Project>{5328FADB-9D7C-410A-877E-F03E08367D9C}</Project>
       <Name>PointIntersectors.Census.Dev</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
