@@ -18,7 +18,7 @@ namespace USC.GISResearchLab.Common.Core.Geocoders.GeocodingQueries.Options
         public OutputDatabaseFieldMappings OutputReferenceFeatureFieldMappings { get; set; }
         public OutputDatabaseFieldMappings OutputCensusFieldMappings { get; set; }
         public OutputDatabaseFieldMappings OutputBookKeepingFieldMappings { get; set; }
-
+        public Version Version { get; set; }
         #endregion
 
 
