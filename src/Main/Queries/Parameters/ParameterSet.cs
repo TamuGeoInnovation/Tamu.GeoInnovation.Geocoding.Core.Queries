@@ -34,7 +34,7 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.Parameters
         public List<AddressComponents> SoundexAttributes { get; set; }
         public AttributeWeightingScheme AttributeWeightingScheme { get; set; }
         public double MinimumMatchScore { get; set; }
-        public List<int> ConfidenceLevels { get; set; }
+        public int ConfidenceLevels { get; set; }
 
 
         public static ParameterSet buildParameterSet(StreetAddress address)
