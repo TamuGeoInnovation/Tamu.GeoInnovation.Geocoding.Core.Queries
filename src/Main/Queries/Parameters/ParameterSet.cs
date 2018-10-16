@@ -25,6 +25,8 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.Parameters
         public LinearUnitTypes OutputUnits { get; set; }
         public LinearUnitTypes DropbackUnits { get; set; }
         public double DropbackValue { get; set; }
+        //TASK:X7-T1 Added variable to allow for not using alias table (10/9/18)
+        public bool ShouldUseAliasTable { get; set; }
         public bool ShouldUseRelaxation { get; set; }
         public bool shouldUseSubstring { get; set; }
         public bool ShouldUseSoundex { get; set; }
