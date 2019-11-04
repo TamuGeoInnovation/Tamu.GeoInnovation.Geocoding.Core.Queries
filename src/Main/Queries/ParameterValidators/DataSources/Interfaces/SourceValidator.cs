@@ -4,14 +4,14 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.ParameterValidators.DataSour
 {
 
     public interface SourceValidator
-	{
-		// info about the source capabilities
-		string getName();
-		int[] getAllSupportedMethods();
+    {
+        // info about the source capabilities
+        string getName();
+        int[] getAllSupportedMethods();
 
-		// methods to validate input
-		bool validateParameters(ValidateableStreetAddress address, bool shouldThrowException);
-		bool validateMethodForAddress(int method, ValidateableStreetAddress address, bool shouldThrowException);
+        // methods to validate input
+        bool validateParameters(ValidateableStreetAddress address, bool shouldThrowException);
+        bool validateMethodForAddress(int method, ValidateableStreetAddress address, bool shouldThrowException);
 
-	}
+    }
 }

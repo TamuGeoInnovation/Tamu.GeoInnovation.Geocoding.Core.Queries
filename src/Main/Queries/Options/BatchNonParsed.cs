@@ -11,7 +11,7 @@ namespace USC.GISResearchLab.Common.Core.Geocoders.GeocodingQueries.Options
         public string FieldCity { get; set; }
         public string FieldState { get; set; }
         public string FieldZip { get; set; }
-        public string FieldOther{ get; set; }
+        public string FieldOther { get; set; }
 
         #endregion
 

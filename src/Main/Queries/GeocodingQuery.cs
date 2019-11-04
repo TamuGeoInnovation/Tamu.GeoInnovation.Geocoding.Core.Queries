@@ -5,7 +5,7 @@ using USC.GISResearchLab.Common.Core.Geocoders.GeocodingQueries.Options;
 namespace USC.GISResearchLab.Common.Core.Geocoders.GeocodingQueries
 {
 
-    public enum QueryMedium { SoapApi, HttpApi, KmlApi, HtmlForm, BatchProcess}
+    public enum QueryMedium { SoapApi, HttpApi, KmlApi, HtmlForm, BatchProcess }
 
     public class GeocodingQuery : ICloneable
     {

@@ -3,7 +3,7 @@
     public class SingleParsed : BaseOptions
     {
         #region Properties
-        
+
         private string _Number;
         public string Number
         {

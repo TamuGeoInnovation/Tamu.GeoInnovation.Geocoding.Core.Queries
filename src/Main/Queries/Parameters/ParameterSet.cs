@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using USC.GISResearchLab.Common.Addresses;
 using USC.GISResearchLab.Common.Geographics.Units;
 //using USC.GISResearchLab.Geocoding.Core.Algorithms.FeatureMatchScorers;
-using USC.GISResearchLab.Geocoding.Core.Configurations;
 using USC.GISResearchLab.Geocoding.Core.Algorithms.FeatureMatchScorers;
 
 namespace USC.GISResearchLab.Geocoding.Core.Queries.Parameters

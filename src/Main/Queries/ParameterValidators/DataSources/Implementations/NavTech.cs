@@ -8,52 +8,52 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.ParameterValidators.DataSour
 {
 
     public class NavTech : SourceValidator
-	{
+    {
 
-		public static int[] m_supportedMethods = {
-													 IneterpolationMethodNames.METHOD_ADDRESS_RANGE,
-													 IneterpolationMethodNames.METHOD_UNIFORM_LOT_SIZE,
-													 IneterpolationMethodNames.METHOD_ACTUAL_LOT_SIZE,
-													 IneterpolationMethodNames.METHOD_ACTUAL_GEOMETRY
-												 };
+        public static int[] m_supportedMethods = {
+                                                     IneterpolationMethodNames.METHOD_ADDRESS_RANGE,
+                                                     IneterpolationMethodNames.METHOD_UNIFORM_LOT_SIZE,
+                                                     IneterpolationMethodNames.METHOD_ACTUAL_LOT_SIZE,
+                                                     IneterpolationMethodNames.METHOD_ACTUAL_GEOMETRY
+                                                 };
 
-		public string getName()
-		{
-			return DataSourceNames.SOURCE_NAME_NAVTECH;
-		}
+        public string getName()
+        {
+            return DataSourceNames.SOURCE_NAME_NAVTECH;
+        }
 
-		public int[] getAllSupportedMethods()
-		{
-			return m_supportedMethods;
-		}
+        public int[] getAllSupportedMethods()
+        {
+            return m_supportedMethods;
+        }
 
-		public bool validateMethodForAddress(int method, ValidateableStreetAddress address, bool shouldThrowError)
-		{
-			bool ret = true;
+        public bool validateMethodForAddress(int method, ValidateableStreetAddress address, bool shouldThrowError)
+        {
+            bool ret = true;
 
-			// check if this source supports the requested method
-			if (!IneterpolationMethodNames.methodIsSupported(method, getAllSupportedMethods()))
-			{
-				ret = false;
-				if (shouldThrowError)
-				{
-					throw new InvalidMethodException("Source: " + getName() + " Only Supports Methods: " + IneterpolationMethodNames.getMethodListFromIntArray(getAllSupportedMethods()));
-				}
-			}
-			else
-			{
-				if ((!address.City.ToLower().Equals("washington")) && (!address.State.ToLower().Equals("dc")))
-				{
-					ret = false;
-					if (shouldThrowError)
-					{
-						throw new ParameterException(getName() + " only works for addresses in washington, dc");
-					}
+            // check if this source supports the requested method
+            if (!IneterpolationMethodNames.methodIsSupported(method, getAllSupportedMethods()))
+            {
+                ret = false;
+                if (shouldThrowError)
+                {
+                    throw new InvalidMethodException("Source: " + getName() + " Only Supports Methods: " + IneterpolationMethodNames.getMethodListFromIntArray(getAllSupportedMethods()));
+                }
+            }
+            else
+            {
+                if ((!address.City.ToLower().Equals("washington")) && (!address.State.ToLower().Equals("dc")))
+                {
+                    ret = false;
+                    if (shouldThrowError)
+                    {
+                        throw new ParameterException(getName() + " only works for addresses in washington, dc");
+                    }
 
-				}
-			}
-			return ret;
-		}
+                }
+            }
+            return ret;
+        }
 
 
 
@@ -103,7 +103,7 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.ParameterValidators.DataSour
             return ret;
         }
 
-		
 
-	}
+
+    }
 }

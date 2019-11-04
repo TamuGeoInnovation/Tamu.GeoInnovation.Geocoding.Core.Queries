@@ -15,24 +15,24 @@ namespace USC.GISResearchLab.Common.Core.Geocoders.GeocodingQueries.Options
         public ExternalGeocoderType ExternalGeocoderType { get; set; }
         //public GeocoderConfiguration GeocoderConfiguration { get; set; }
 
-        
+
 
         public bool ShouldOutputCensusFields { get; set; }
         public CensusYear CensusYear { get; set; }
         public bool ShouldOutputReferenceFeatureGeometry { get; set; }
-       
+
 
 
         #endregion
 
         public BaseOptions()
         {
-           
+
         }
 
         public BaseOptions(FeatureMatchingSelectionMethod featureMatchingHierarchy, bool shouldUseRelaxation, bool shouldUseFuzzy, bool shouldUseCaching, bool shouldReturnExhaustiveGeocodes, bool shouldUseDynamicComposition, bool shouldOutputCensusFields)
         {
-          
+
         }
     }
 }

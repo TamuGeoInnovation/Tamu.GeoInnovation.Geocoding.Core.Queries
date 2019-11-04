@@ -1,10 +1,10 @@
 namespace USC.GISResearchLab.Geocoding.Core.Queries.ParameterValidators.DataSources.Interfaces
 {
-	/// <summary>
+    /// <summary>
     /// Summary description for SourceValidatorFactory.
-	/// </summary>
+    /// </summary>
     public interface SourceValidatorFactory
-	{
-		SourceValidator getObject();
-	}
+    {
+        SourceValidator getObject();
+    }
 }
