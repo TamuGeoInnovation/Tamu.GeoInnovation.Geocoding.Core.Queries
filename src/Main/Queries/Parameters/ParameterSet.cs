@@ -17,6 +17,7 @@ namespace USC.GISResearchLab.Geocoding.Core.Queries.Parameters
         public bool HasZip { get; set; }
         public bool HasCityState { get; set; }
         public StreetAddress StreetAddress { get; set; }
+        public StreetAddress StreetAddressInitialParse { get; set; }
         public StreetAddress AttemptedStreetAddress { get; set; }
         public RelaxableStreetAddress RelaxableStreetAddress { get; set; }
         public DBQueryParameters DbQueryParameters { get; set; }
